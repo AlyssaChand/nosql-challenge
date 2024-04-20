@@ -14,3 +14,10 @@ For this part of the challenge, I added the following information to the databas
 I searched for the BusinessTypeID for "Restaurant/Cafe/Canteen" and updated the new restaurant with the BusinessTypeID that I found. Then I checked how many documents contain the Dover Local Authority and removed any establishments within it from the database. I checked the number of documents that contain the Dover Local Authority again to ensure they were deleted. Lastly, using update_many I converted some of the number values that were stored as strings to decimal numbers for latitude and longitude, and integer numbers for RatingValue. 
 
 ## Part 3: Exploratory Analysis
+### NoSQL_analysis_starter.ipynb
+For this part of the challenge, I used count_documents to display the number of documents contained in the result and used pprint to display it. Then I converted the results to a Pandas DataFrame, printed the number of rows in the DataFrame, and displayed the first 10 rows. I used the following questions to explore the database:
+
+1. Which establishments have a hygiene score equal to 20?
+2. Which establishments in London have a RatingValue greater than or equal to 4?
+3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
